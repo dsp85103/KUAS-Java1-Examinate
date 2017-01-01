@@ -1,5 +1,5 @@
 # KUAS資管系 Java程式設計(一)會考 詳解
-### [完整題目下載](https://doc-10-3k-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/mnhlfpl51ipcn0g263bfmcmm7stap7e9/1483293600000/06997081540467111233/*/0B8FJwHZ-4da7d0NxbGhOX0FHaXM?e=download)
+### [完整題目下載](http://ilearning.kuas.edu.tw/base/10001/course/10022195/board/1000039930/000000006/WM58536ef14957f.pdf)
 ||Easy|Medium|Difficult|
 |:--|:--|:--|:--|
 |1|陣列相加|買水果|氣泡排序法|
