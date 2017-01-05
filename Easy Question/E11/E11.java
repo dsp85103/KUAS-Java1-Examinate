@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class E11 {
 	public static Boolean auth(int x) {
-		for(int i=2;i<Math.sqrt(x);i++) {
+		for(int i=2;i<=Math.sqrt(x);i++) {
 			if(x%i==0) return false;
 		}
 		return true;
