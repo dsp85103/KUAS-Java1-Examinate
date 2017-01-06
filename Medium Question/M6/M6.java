@@ -7,29 +7,20 @@ public class M6 {
 		while(true) {
 			Asec++;
 			Bsec++;
-			if(Asec>mDis-((Bsec*30*2.54)/100))
-				break;
+			if(Asec>mDis-((Bsec*30*2.54)/100))  //如果(A秒數*A一秒走的距離)>(全部距離減去B秒數*B一秒走的距離) 
+				break;   //表示已經遇見 結束迴圈
 		}
-		while(Asec/60!=0) {
-				Amin=Asec/60;
-				Asec=Asec%60;
-		}
-		while(Amin/60!=0) {
-				Ahour=Amin/60;
-				Amin=Amin%60;
-		}
-		if(Ahour==0 && Amin==0 && Asec!=0) 
-			System.out.print("兩人在 "+Asec+" 秒 會相遇。");
-		if(Ahour==0 && Amin!=0 && Asec==0) 
-			System.out.print("兩人在 "+Amin+" 分 會相遇。");
-		if(Ahour==0 && Amin!=0 && Asec!=0)
-			System.out.print("兩人在 "+Amin+" 分 "+Asec+" 秒 會相遇。");
-		if(Ahour!=0 && Amin==0 && Asec==0) 
-			System.out.print("兩人在 "+Ahour+" 小時 會相遇。");
-		if(Ahour!=0 && Amin==0 && Asec!=0) 
-			System.out.print("兩人在 "+Ahour+" 小時 "+Asec+" 秒 會相遇。");
-		if(Ahour!=0 && Amin!=0 && Asec==0) 
-			System.out.print("兩人在 "+Ahour+" 小時 " +Amin+" 分 會相遇。");
-		if(Ahour!=0 && Amin!=0 && Asec!=0) 
-			System.out.print("兩人在 "+Ahour+" 小時 "+Amin+" 分 "+Asec+" 秒 會相遇。");
-	} }
+		Amin=Asec/60;
+		Ahour=Amin/60;
+		Asec=Asec%60;
+		
+		String Ans="";
+		if(Ahour!=0)
+			Ans += Ahour+" 小時 ";
+		if(Amin!=0)
+			Ans += Amin+" 分 ";
+		if(Asec!=0)
+			Ans += Asec+" 秒 ";
+		System.out.print("兩人在 "+Ans+"會相遇。");
+	} 
+}
